@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category>
+    <pattern>What is beauty</pattern>
+    <template>A subjective judgment evoked by an emotional response</template>
+</category>
+<category>
+    <pattern>Why not</pattern>
+    <template>I do not have an answer for that</template>
+</category>
+<category>
+    <pattern>where is Keynsham</pattern>
+    <template>I do not know where Keynsham is</template>
+</category>
+<category>
+    <pattern>Why not</pattern>
+    <that>I do not know where Keynsham is</that>
+    <template>Because I do not have a category to connect me to a mapping service</template>
+</category>
+<category>
+    <pattern>Where is *</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Bristol">In the South-West of the U.K.</condition>
+        <condition name = "state" value = "London">Roughly half-way between Hatfield and Severnoaks</condition>
+        <condition name = "state" value = "Bath">In Somerset</condition>
+        <condition name = "state" value = "UWE">In north Bristol</condition>
+        <condition name = "state" value = "beauty">In the eye of the beholder</condition>
+        <condition name = "state" value = "chatter">I do not have an answer for that</condition>
+    </template>
+</category>
+<category>
+    <pattern>Whereabouts is *</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Bristol">In the South-West of the U.K.</condition>
+        <condition name = "state" value = "London">Roughly half-way between Hatfield and Severnoaks</condition>
+        <condition name = "state" value = "Bath">In Somerset</condition>
+        <condition name = "state" value = "beauty">In the eye of the beholder</condition>
+    </template>
+</category>
+<category>
+    <pattern>Whereabouts is * _</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Bristol">In the South-West of the U.K.</condition>
+        <condition name = "state" value = "London">Roughly half-way between Hatfield and Severnoaks</condition>
+        <condition name = "state" value = "Bath">In Somerset</condition>
+        <condition name = "state" value = "beauty">In the eye of the beholder</condition>
+    </template>
+</category>
+<category>
+    <pattern>Tell me where * is</pattern>
+    <template><think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Bristol">In the South-West of the U.K.</condition>
+        <condition name = "state" value = "London">Roughly half-way between Hatfield and Severnoaks</condition>
+        <condition name = "state" value = "Bath">In Somerset</condition>
+        <condition name = "state" value = "UWE">In north Bristol</condition>
+        <condition name = "state" value = "beauty">In the eye of the beholder</condition>
+    </template>
+</category>
+<category>
+    <pattern>where is * _</pattern>
+    <template><think><set name = "state"><star /></set></think>
+      <condition name = "state" value = "Bristol">In the South-West of the U.K.</condition>
+        <condition name = "state" value = "London">Roughly half-way between Hatfield and Severnoaks</condition>
+        <condition name = "state" value = "Bath">In Somerset</condition>
+        <condition name = "state" value = "UWE">In north Bristol</condition>
+        <condition name = "state" value = "beauty">In the eye of the beholder</condition>
+    </template>
+</category>
+<category>
+    <pattern>* Chatter</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Where is Bristol">In the South-West of the U.K.</condition>
+        <condition name = "state" value = "Whereabouts is Bath">In Somerset</condition>
+        <condition name = "state" value = "Where is UWE">In north Bristol</condition>
+        <condition name = "state" value = "Whereabouts is beauty">In the eye of the beholder</condition>
+        <condition name = "state" value = "Please tell me where Bath is">In Somerset</condition>
+    </template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Chatter where is UWE please">In north Bristol</condition>
+        <condition name = "state" value = "Please Please tell me where london is">Roughly half-way between Hatfield and Severnoaks</condition>
+        <condition name = "state" value = "Where is chatter">I do not have an answer for tha</condition>
+        <condition name = "state" value = "Chatter please">I do not have an answer for that</condition>
+        <condition name = "state" value = "Is Bath in Bristol">I do not have an answer for that</condition>
+        <condition name = "state" value = "What is UWE">I do not have an answer for that</condition>
+        <condition name = "state" value = "Tell me where Bristol is">In the South-West of the U.K.</condition>
+        <condition name = "state" value = "Tell me where London is please">Roughly half-way between Hatfield and Severnoaks</condition>
+    </template>
+</category>
+<category>
+    <pattern>Tell me where London is please Chatter</pattern>
+    <template>Roughly half-way between Hatfield and Severnoaks</template>
+</category>
+<category>
+    <pattern>what is *</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Bristol">Bristol is a city.</condition>
+        <condition name = "state" value = "London">London is a city.</condition>
+        <condition name = "state" value = "UWE">I do not have an answer for that</condition>
+    </template>
+</category>
+<category>
+    <pattern>Where is it</pattern>
+    <that>Bristol is a city</that>
+    <template>In the South-West of the U.K.</template>
+</category>
+<category>
+    <pattern>Where is it</pattern>
+    <that>London is a city</that>
+    <template>Roughly half-way between Hatfield and Severnoaks</template>
+</category>
+<category>
+    <pattern>What is the population of *</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Bristol">The population of Bristol is about 430000</condition>
+        <condition name = "state" value = "London">The population of London is about 8.6 million</condition>
+        <condition name = "state" value = "Bath">The population of Bath is about 84000</condition>
+    </template>
+</category>
+<category>
+    <pattern>How many people live in *</pattern>
+    <template>
+        <think><set name = "state"><star /></set></think>
+        <condition name = "state" value = "Bristol">The population of Bristol is about 430000</condition>
+        <condition name = "state" value = "Keynsham">I do not know what the population of Keynsham is</condition>
+        <condition name = "state" value = "Bath">The population of Bath is about 84000</condition>
+        <condition name = "state" value = "space">I do not know what the population of space is</condition>
+    </template>
+</category>
+<category>
+    <pattern>Why not</pattern>
+    <that>I do not know what the population of Keynsham is</that>
+    <template>Because it is too hard to count the residents of Keynsham</template>
+</category>
+<category>
+    <pattern>Why not</pattern>
+    <that>I do not know what the population of space is</that>
+    <template>Because it is too hard to count the residents of space</template>
+</category>
+</aiml>
